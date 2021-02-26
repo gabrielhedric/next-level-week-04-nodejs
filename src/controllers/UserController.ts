@@ -30,7 +30,7 @@ class UserController { // classe para criação de usuários
 
         await usersRepository.save(user);
 
-        return response.json(user);
+        return response.status(201).json(user);
     }
 }
 
